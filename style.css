@@ -111,3 +111,8 @@ table caption {
     cursor: pointer;
     font-weight: bold;
 }
+
+.works-cited {
+    margin-left: 2rem;
+    text-indent: -2rem;
+}
