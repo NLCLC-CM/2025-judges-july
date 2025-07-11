@@ -71,7 +71,7 @@ table {
     border-collapse: collapse;
 }
 
-table .msg {
+table td .msg {
     text-align: justify;
 }
 
