@@ -34,6 +34,8 @@
 
         <p><strong>Structure</strong></p>
 
+        <button id="msg-toggle">Toggle MSG</button>
+
         <table>
           <caption>Table 1: Nicely formatted table of different translations of Judges 7:19-8:32.</caption>
 
@@ -48,7 +50,7 @@
             <tr>
               <th></th>
               <th>和修</th>
-              <th>MSG</th>
+              <th class="msg">MSG</th>
               <th>Interpretation</th>
             </tr>
           </thead>
@@ -839,10 +841,24 @@
         1984. Print.
         </p>
         <p class="works-cited">
-        <em>Holman QuickSource: Bible Atlas - WIth Charts and Biblical Reconstructions</em>. Nashville:
+        <em>Holman QuickSource: Bible Atlas - With Charts and Biblical Reconstructions</em>. Nashville:
         Holman Bible Publishers, 2005. Print.
         </p>
       </article>
     </main>
+
+    <script>
+      const msgElements = document.getElementsByClassName('msg');
+      const msgToggle = document.getElementById('msg-toggle');
+      msgToggle.addEventListener('click', () => {
+        for (const e of msgElements) {
+          if (e.style.display === 'none') {
+            e.style.display = '';
+          } else {
+            e.style.display = 'none';
+          }
+        }
+      });
+    </script>
   </body>
 </html>
