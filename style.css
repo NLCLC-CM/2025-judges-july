@@ -84,6 +84,14 @@ table caption {
     caption-side: bottom;
 }
 
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
 @media (min-width: 60rem) {
     article {
         width: 60rem;
