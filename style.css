@@ -4,9 +4,9 @@
     --table-border-color: black;
     --href-color: blue;
 
-    --faith-color: blue;
-    --law-color: magenta;
-    --love-color: red;
+    --name-color: blue;
+    --place-color: magenta;
+    --god-color: red;
     --circ-color: lavender;
     --free-color: green;
 }
@@ -18,9 +18,9 @@
         --table-border-color: #9399b2;
         --href-color: #74c7ec;
 
-        --faith-color: #89dceb;
-        --law-color: #f9e2af;
-        --love-color: #f38ba8;
+        --name-color: #89dceb;
+        --place-color: #f9e2af;
+        --god-color: #f38ba8;
         --circ-color: #b4befe;
         --free-color: #a6e3a1;
     }
@@ -29,7 +29,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
@@ -92,6 +92,11 @@ figcaption {
     text-align: center;
 }
 
+label {
+    margin: 0.5rem;
+    display: block;
+}
+
 @media (min-width: 60rem) {
     article {
         width: 60rem;
@@ -113,6 +118,18 @@ figcaption {
 
 .answer {
     font-style: italic;
+}
+
+.name {
+    color: var(--name-color);
+}
+
+.place {
+    color: var(--place-color);
+}
+
+.god {
+    color: var(--god-color);
 }
 
 .repeating {
